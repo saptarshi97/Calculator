@@ -25,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
         if(t1.equals("") || t2.equals(""))
         {
             if(t1.equals(""))
-            num1=0;
+            {
+                num1=0;
+                num2=Double.parseDouble(t2);
+            }
             else if(t2.equals(""))
+            {
                 num2=0;
+                num1=Double.parseDouble(t2);
+            }
             else
             {
                 num1=0;
